@@ -1,43 +1,48 @@
-# Medical Disease Prediction System
+# Disease Prediction — ML Project
 
-A lightweight, clean Machine Learning project for predicting medical diagnoses based on patient symptom profiles using classical classification algorithms.
+> 🏥 **Predict diseases from symptoms** using machine learning — a Streamlit web app powered by trained classifiers for medical symptom analysis.
 
-## 🎯 Model Training & Selection
+[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=flat-square&logo=python)](https://python.org)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?style=flat-square&logo=streamlit)](https://streamlit.io)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-F7931E?style=flat-square&logo=scikit-learn)](https://scikit-learn.org)
 
-The notebook `data_cleaning_and_modeling.ipynb` trains and benchmarks 6 classical models:
-1. **Logistic Regression** (Selected Best Model 🏆 - 97.65% Test Accuracy)
-2. **Decision Tree**
-3. **Random Forest**
-4. **KNN (K-Nearest Neighbors)**
-5. **Support Vector Machine (SVM)**
-6. **Naive Bayes**
+## What is this?
 
----
+A **disease prediction system** that takes user-reported symptoms as input and predicts possible diseases using trained ML classifiers. The project includes data cleaning, feature engineering, model training, and a Streamlit web interface for easy interaction.
 
-## 📂 Project Layout
+## Features
 
-```
-medical_disease_prediction/
-├── data_cleaning_and_modeling.ipynb  # Data cleaning, EDA & model training
-├── app.py                            # Streamlit web UI
-├── README.md
-├── .gitignore
-├── data/
-│   ├── Training.csv
-│   └── Testing.csv
-└── saved_models/
-    ├── best_model.joblib
-    ├── label_encoder.joblib
-    ├── feature_names.joblib
-    ├── model_comparison.json
-    └── symptoms.json
-```
+- 🩺 **Symptom-Based Prediction** — select symptoms and get disease predictions
+- 🤖 **Multiple ML Models** — trained and compared for best accuracy
+- 📊 **Data Pipeline** — full data cleaning and preprocessing notebook
+- 🖥️ **Web App** — interactive Streamlit interface
 
----
+## Tech Stack
 
-## 🚀 How to Run Streamlit Web App
+- **ML**: Scikit-Learn (Classification)
+- **Web App**: Streamlit
+- **Language**: Python
+- **Data**: Medical symptom-disease dataset
+
+## Getting Started
 
 ```bash
-pip install pandas numpy scikit-learn matplotlib seaborn streamlit joblib
+git clone https://github.com/jaidevxr/disease-prediction-ml-project.git
+cd disease-prediction-ml-project
+pip install -r requirements.txt  # if available
 streamlit run app.py
 ```
+
+## Project Structure
+
+```
+├── app.py                             # Streamlit web application
+├── data_cleaning_and_modeling.ipynb   # Data preprocessing + model training
+├── data/                              # Training datasets
+├── saved_models/                      # Pre-trained model files
+└── README.md
+```
+
+## License
+
+MIT
